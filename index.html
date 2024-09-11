@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f7f7f7;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 100px;
+        }
+        h1 {
+            color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+        h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 4px solid #ccc;
+            overflow-x: auto;
+        }
+        input {
+            margin-top: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Logo de HTML5 -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML5">
+        <h1>HTML Input Types</h1>
+        <p>Explora los diferentes tipos de inputs que puedes utilizar en formularios HTML.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#button">Button</a></li>
+            <li><a href="#checkbox">Checkbox</a></li>
+            <li><a href="#color">Color</a></li>
+            <li><a href="#date">Date</a></li>
+            <li><a href="#datetime-local">Datetime-local</a></li>
+            <li><a href="#email">Email</a></li>
+            <li><a href="#file">File</a></li>
+            <li><a href="#hidden">Hidden</a></li>
+            <li><a href="#image">Image</a></li>
+            <li><a href="#month">Month</a></li>
+            <li><a href="#number">Number</a></li>
+            <li><a href="#password">Password</a></li>
+            <li><a href="#radio">Radio</a></li>
+            <li><a href="#range">Range</a></li>
+            <li><a href="#reset">Reset</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#submit">Submit</a></li>
+            <li><a href="#tel">Tel</a></li>
+            <li><a href="#text">Text</a></li>
+            <li><a href="#time">Time</a></li>
+            <li><a href="#url">URL</a></li>
+            <li><a href="#week">Week</a></li>
+        </ul>
+    </nav>
+
+    <!-- Secciones individuales para cada tipo de input -->
+    
+    <section id="button">
+        <h2>Button</h2>
+        <p>El input de tipo <code>button</code> crea un botón simple que no realiza ninguna acción por sí mismo.</p>
+        <pre><code>&lt;input type="button" value="Click Me"&gt;</code></pre>
+        <input type="button" value="Click Me">
+    </section>
+
+    <section id="checkbox">
+        <h2>Checkbox</h2>
+        <p>El input de tipo <code>checkbox</code> permite seleccionar o deseleccionar una opción.</p>
+        <pre><code>&lt;input type="checkbox"&gt; Opción</code></pre>
+        <input type="checkbox"> Opción
+    </section>
+
+    <section id="color">
+        <h2>Color</h2>
+        <p>El input de tipo <code>color</code> permite al usuario seleccionar un color utilizando un selector de colores.</p>
+        <pre><code>&lt;input type="color"&gt;</code></pre>
+        <input type="color">
+    </section>
+
+    <section id="date">
+        <h2>Date</h2>
+        <p>El input de tipo <code>date</code> permite seleccionar una fecha en un calendario.</p>
+        <pre><code>&lt;input type="date"&gt;</code></pre>
+        <input type="date">
+    </section>
+
+    <section id="datetime-local">
+        <h2>Datetime-local</h2>
+        <p>El input de tipo <code>datetime-local</code> permite seleccionar una fecha y una hora sin zona horaria.</p>
+        <pre><code>&lt;input type="datetime-local"&gt;</code></pre>
+        <input type="datetime-local">
+    </section>
+
+    <section id="email">
+        <h2>Email</h2>
+        <p>El input de tipo <code>email</code> espera que el usuario introduzca una dirección de correo electrónico válida.</p>
+        <pre><code>&lt;input type="email"&gt;</code></pre>
+        <input type="email">
+    </section>
+
+    <section id="file">
+        <h2>File</h2>
+        <p>El input de tipo <code>file</code> permite al usuario seleccionar un archivo de su dispositivo.</p>
+        <pre><code>&lt;input type="file"&gt;</code></pre>
+        <input type="file">
+    </section>
+
+    <section id="hidden">
+        <h2>Hidden</h2>
+        <p>El input de tipo <code>hidden</code> no es visible para el usuario, pero envía información al servidor.</p>
+        <pre><code>&lt;input type="hidden" value="dato oculto"&gt;</code></pre>
+        <input type="hidden" value="dato oculto">
+    </section>
+
+    <section id="image">
+        <h2>Image</h2>
+        <p>El input de tipo <code>image</code> crea un botón gráfico con una imagen.</p>
+        <pre><code>&lt;input type="image" src="https://via.placeholder.com/150" alt="Submit Image"&gt;</code></pre>
+        <input type="image" src="https://via.placeholder.com/150" alt="Submit Image">
+    </section>
+
+    <section id="month">
+        <h2>Month</h2>
+        <p>El input de tipo <code>month</code> permite seleccionar un mes y año.</p>
+        <pre><code>&lt;input type="month"&gt;</code></pre>
+        <input type="month">
+    </section>
+
+    <section id="number">
+        <h2>Number</h2>
+        <p>El input de tipo <code>number</code> permite seleccionar un número dentro de un rango.</p>
+        <pre><code>&lt;input type="number"&gt;</code></pre>
+        <input type="number" min="0" max="10">
+    </section>
+
+    <section id="password">
+        <h2>Password</h2>
+        <p>El input de tipo <code>password</code> oculta el texto ingresado.</p>
+        <pre><code>&lt;input type="password"&gt;</code></pre>
+        <input type="password">
+    </section>
+
+    <section id="radio">
+        <h2>Radio</h2>
+        <p>El input de tipo <code>radio</code> permite seleccionar una opción de un grupo de opciones.</p>
+        <pre><code>&lt;input type="radio" name="grupo"&gt; Opción 1</code></pre>
+        <input type="radio" name="grupo"> Opción 1
+        <input type="radio" name="grupo"> Opción 2
+    </section>
+
+    <section id="range">
+        <h2>Range</h2>
+        <p>El input de tipo <code>range</code> permite seleccionar un valor dentro de un rango con un control deslizante.</p>
+        <pre><code>&lt;input type="range"&gt;</code></pre>
+        <input type="range" min="0" max="100">
+    </section>
+
+    <section id="reset">
+        <h2>Reset</h2>
+        <p>El input de tipo <code>reset</code> reinicia los campos de un formulario a sus valores predeterminados.</p>
+        <pre><code>&lt;input type="reset" value="Reiniciar formulario"&gt;</code></pre>
+        <input type="reset" value="Reiniciar formulario">
+    </section>
+
+    <section id="search">
+        <h2>Search</h2>
+        <p>El input de tipo <code>search</code> crea un campo de búsqueda especializado.</p>
+        <pre><code>&lt;input type="search"&gt;</code></pre>
+        <input type="search">
+    </section>
+
+    <section id="submit">
+        <h2>Submit</h2>
+        <p>El input de tipo <code>submit</code> envía los datos del formulario al servidor.</p>
+        <pre><code>&lt;input type="submit" value="Enviar"&gt;</code></pre>
+        <input type="submit" value="Enviar">
+    </section>
+
+    <section id="tel">
+        <h2>Tel</h2>
+        <p>El input de tipo <code>tel</code> acepta números de teléfono.</p>
+        <pre><code>&lt;input type="tel"&gt;</code></pre>
+        <input type="tel">
+    </section>
+
+    <section id="text">
+        <h2>Text</h2>
+        <p>El input de tipo <code>text</code> es el más común y permite ingresar texto libre.</p>
+        <pre><code>&lt;input type="text"&gt;</code></pre>
+        <input type="text">
+    </section>
+
+    <section id="time">
+        <h2>Time</h2>
+        <p>El input de tipo <code>time</code> permite seleccionar una hora específica.</p>
+        <pre><code>&lt;input type="time"&gt;</code></pre>
+        <input type="time">
+    </section>
+
+    <section id="url">
+        <h2>URL</h2>
+        <p>El input de tipo <code>url</code> espera una URL válida.</p>
+        <pre><code>&lt;input type="url"&gt;</code></pre>
+        <input type="url">
+    </section>
+
+    <section id="week">
+        <h2>Week</h2>
+        <p>El input de tipo <code>week</code> permite seleccionar una semana específica del año.</p>
+        <pre><code>&lt;input type="week"&gt;</code></pre>
+        <input type="week">
+    </section>
+
+</body>
+</html>
